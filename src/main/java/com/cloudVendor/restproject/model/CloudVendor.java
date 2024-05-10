@@ -1,17 +1,20 @@
 package com.cloudVendor.restproject.model;
 
-import jakarta.persistence.Entity; // also added dependecy for this
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name="cloud_vendor_info")// different to table which will be created in my db
 public class CloudVendor
 {
+
     @Id
+    @Column(name = "vendor_id", length = 50)
     private String vendorId;
+    @Column(name = "vendor_name", length = 50)
     private String vendorName;
+    @Column(name = "vendor_address", length = 50)
     private String vendorAddress;
+    @Column(name = "vendor_phone_number", length = 50)
     private String vendorPhoneNumber;
 
     public CloudVendor(String vendorId, String vendorName, String vendorAddress, String vendorPhoneNumber) {
@@ -55,3 +58,5 @@ public class CloudVendor
         return vendorPhoneNumber;
     }
 }
+
+
