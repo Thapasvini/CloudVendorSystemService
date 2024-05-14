@@ -8,7 +8,7 @@ public class CloudVendor
 {
 
     @Id
-    @Column(name = "vendor_id", length = 50)
+    @Column(name = "vendor_id", length = 40)
     private String vendorId;
     @Column(name = "vendor_name", length = 50)
     private String vendorName;
