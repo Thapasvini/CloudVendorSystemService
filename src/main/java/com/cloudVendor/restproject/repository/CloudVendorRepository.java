@@ -6,5 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 // JPARepo helps in methods like save,
 public interface CloudVendorRepository extends JpaRepository<CloudVendor, String>
 //here we have given model class name and datatype of Id i.e., vendorId
+    //JpaRepository helps in connecting with database and interact with db to save and retrive data
+
 {
 }

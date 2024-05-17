@@ -4,5 +4,6 @@ spring:
     username: root
     password: Thappu@1999
 
+#the sql dialect makes hibernate generate better SQL fot the choosen database
 #JPA settings
 jpa.hibernate.ddl_auto: create # if we dont want details configuration can go for update as well
